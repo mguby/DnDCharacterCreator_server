@@ -3,6 +3,10 @@ var express = require('express');
 var router = express.Router();
 var bodyParser = require('body-parser');
 
+var passport = require('passport');
+var session = require('express-session');
+var cookieParser = require('cookie-parser');
+
 // Create our Express application
 var app = express();
 
