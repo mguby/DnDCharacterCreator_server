@@ -29,6 +29,11 @@ app.use(bodyParser.urlencoded({
 
 app.use(bodyParser.json());
 
+app.use(cookieParser());
+app.use(session({ secret : 'passport' }));
+app.use(passport.initialize());
+app.use(passport.session());
+
 // Use routes as a module (see index.js)
 require('./routes')(app, router);
 
