@@ -1,4 +1,4 @@
-var ph = require('./parseHelpers');
+var ph = require('./parse_helpers');
 
 module.exports = {
     createResponse : function (message, data) {
