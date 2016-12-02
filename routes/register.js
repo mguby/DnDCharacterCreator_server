@@ -22,7 +22,7 @@ module.exports = function(router) {
 
 		var promise = newUser.save();
 		promise.then(function (result) {
-			res.redirect('http://localhost:3000/#/home');
+			res.redirect('http://localhost:3000/#/login');
 		})
 		.catch(function(err){
 			res.status(500).json({ message: 'ERROR', data: [] });

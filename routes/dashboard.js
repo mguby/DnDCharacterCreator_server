@@ -7,8 +7,8 @@ module.exports = function(router) {
   var dashboardRoute = router.route('/dashboard');
 
   dashboardRoute.get(ensureAuthenticated, function(req, res) {
-  	console.log(req.session);
-  	res.json({ message: 'logged in', data: [] });
+  	//console.log(req.session);
+  	res.json({ message: 'logged in'});
   });
 
 
@@ -16,8 +16,9 @@ module.exports = function(router) {
 	if(req.isAuthenticated()){
 		return next();
 	} else {
-		console.log(req.session);
-		res.json({ message: 'not logged in', data: [] });
+		//console.log(req.session);
+		res.json({ message: 'not logged in'});
+    //res.redirect('http://localhost:3000/#/login');
 	}
 }
   return router;

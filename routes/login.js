@@ -5,7 +5,7 @@ var LocalStrategy = require('passport-local').Strategy;
 
 module.exports = function(router) {
 
-  var registerRoute = router.route('/login');
+  var loginRoute = router.route('/login');
 
 
 passport.use(new LocalStrategy(
@@ -34,10 +34,10 @@ passport.deserializeUser(function(id, done) {
     });
 });
   
-  registerRoute.post(passport.authenticate('local', {
-  	successRedirect:'http://localhost:3000/#/dashboard', 
-  	failureRedirect:'http://localhost:3000/#/login',
-  	session: true
-  }));
+  loginRoute.post(passport.authenticate('local', {failureRedirect:'http://localhost:3000/#/login/'}),
+  function(req, res) {
+    res.redirect('http://localhost:3000/#/dashboard/' + req.user.username);
+  });
   return router;
 }
+
