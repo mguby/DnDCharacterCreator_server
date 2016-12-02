@@ -3,6 +3,11 @@ var express = require('express');
 var router = express.Router();
 var bodyParser = require('body-parser');
 
+// Connect to mongodb databse
+var mongoose = require('mongoose');
+mongoose.Promise = require('bluebird');
+mongoose.connect('mongodb://mark:1234@ds119748.mlab.com:19748/cs498rk1_dnd');
+
 var passport = require('passport');
 var session = require('express-session');
 var cookieParser = require('cookie-parser');
@@ -11,7 +16,7 @@ var cookieParser = require('cookie-parser');
 var app = express();
 
 // Use environment defined port or 3000
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 8080;
 
 //Allow CORS so that backend and frontend could pe put on different servers
 var allowCrossDomain = function(req, res, next) {
@@ -33,10 +38,16 @@ app.use(cookieParser());
 app.use(session({
   secret : 'passport',
   resave: false,
-  saveUninitialized: false
+  saveUninitialized: false,
+  cookie : { httpOnly: false}
 }));
 app.use(passport.initialize());
 app.use(passport.session());
+
+app.use(function (req, res, next) {
+  res.locals.user = req.user || null;
+  next();
+});
 
 // Use routes as a module (see index.js)
 require('./routes')(app, router);
