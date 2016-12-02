@@ -1,4 +1,4 @@
-var getter = require('../config/get_requester');
+var getter = require('../util/get_requester');
 var Races = require('../models/race');
 
 var baseRoute = '/constants';

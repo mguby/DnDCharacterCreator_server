@@ -1,5 +1,5 @@
 var helpers = require('./helpers');
-var secrets = require('./secrets');
+var secrets = require('../config/secrets');
 var mongoose = require('mongoose');
 
 module.exports = {
