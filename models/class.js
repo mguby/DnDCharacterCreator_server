@@ -3,7 +3,9 @@ var mongoose = require('mongoose');
 
 // Define our beer schema
 var ClassSchema   = new mongoose.Schema({
-    name: String
+    name: String,
+    description: String,
+    classSkills: [String]
 });
 
 // Export the Mongoose model
