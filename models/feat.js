@@ -6,8 +6,7 @@ var Stat = require('./stat').schema;
 var FeatSchema   = new mongoose.Schema({
     name: String,
     description: String,
-    benefit: String,
-    bonus: [Stat]
+    benefit: String
 });
 
 // Export the Mongoose model
