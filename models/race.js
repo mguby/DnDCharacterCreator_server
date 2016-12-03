@@ -1,15 +1,11 @@
 // Load required packages
 var mongoose = require('mongoose');
-
-var statSchema = new mongoose.Schema({
-    name: String,
-    modifier: Number
-});
+var Stat = require('./stat').schema;
 
 var traitSchema = new mongoose.Schema({
     name: String,
     description: String,
-    boost: [statSchema]
+    boost: [Stat]
 });
 
 var RaceSchema   = new mongoose.Schema({
