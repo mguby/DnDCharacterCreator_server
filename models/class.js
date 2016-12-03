@@ -5,7 +5,8 @@ var mongoose = require('mongoose');
 var ClassSchema   = new mongoose.Schema({
     name: String,
     description: String,
-    classSkills: [String]
+    classSkills: [String],
+    image: String
 });
 
 // Export the Mongoose model
