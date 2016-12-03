@@ -11,7 +11,8 @@ var traitSchema = new mongoose.Schema({
 var RaceSchema   = new mongoose.Schema({
     name: String,
     description: String,
-    traits: [traitSchema]
+    traits: [traitSchema],
+    image: String
 });
 
 // Export the Mongoose model
