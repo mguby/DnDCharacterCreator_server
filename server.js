@@ -1,4 +1,5 @@
 // Get the packages we need
+var secrets = require('./config/secrets');
 var express = require('express');
 var router = express.Router();
 var bodyParser = require('body-parser');
@@ -6,7 +7,7 @@ var bodyParser = require('body-parser');
 // Connect to mongodb databse
 var mongoose = require('mongoose');
 mongoose.Promise = require('bluebird');
-mongoose.connect('mongodb://mark:1234@ds119748.mlab.com:19748/cs498rk1_dnd');
+mongoose.connect(secrets.mongo_connection);
 
 var passport = require('passport');
 var session = require('express-session');

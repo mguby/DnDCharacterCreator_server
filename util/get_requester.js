@@ -5,7 +5,6 @@ var mongoose = require('mongoose');
 module.exports = {
     get : function (schema, req, res) {
         var json = helpers.parseQuery(req.query);
-        var db = mongoose.connect(secrets.mongo_connection);
         schema.find(json['where'], json['select'])
             .skip(json['skip'])
             .limit(json['limit'])
@@ -19,6 +18,5 @@ module.exports = {
                 }
                 res.json(helpers.createResponse(err, result));
             });
-        db.disconnect();
     }
 };
