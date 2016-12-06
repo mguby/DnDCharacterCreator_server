@@ -13,5 +13,8 @@ module.exports = {
         json['skip'] = query['skip'] !== undefined ? parseInt(query['skip']) : 0;
         json['count'] = query['count'] !== undefined ? (query['count'] === 'true') : false;
         return json;
+    },
+    getCharId : function(req) {
+        return req._parsedUrl.pathname.substr(12);
     }
 };
