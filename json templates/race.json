@@ -1,0 +1,32 @@
+{
+    "name" : "Humans",
+    "description" : "Humans possess exceptional drive and a great capacity to endure and expand, and as such are currently the dominant race in the world. Their empires and nations are vast, sprawling things, and the citizens of these societies carve names for themselves with the strength of their sword arms and the power of their spells. Humanity is best characterized by its tumultuousness and diversity, and human cultures run the gamut from savage but honorable tribes to decadent, devil-worshiping noble families in the most cosmopolitan cities. Humans' curiosity and ambition often triumph over their predilection for a sedentary lifestyle, and many leave their homes to explore the innumerable forgotten corners of the world or lead mighty armies to conquer their neighbors, simply because they can.",
+    "traits" : [
+    	{ 
+    		"name" : "Ability Score Racial Traits",
+    		"description" : "Human characters gain a +2 racial bonus to one ability score of their choice at creation to represent their varied nature.",
+    		"boost" : [
+    			{
+	    			"name" : "any",
+	    			"modifier" : 2
+    			}
+    		]
+    	},
+    	{
+            "name": "Size",
+            "description": "Humans are Medium creatures and thus receive no bonuses or penalties due to their size.",
+            "boost": []
+    	},
+    	{
+    		"name" : "Base Speed",
+    		"description" : "Humans have a base speed of 30 feet.",
+    		"boost" : []
+    	},
+    	{
+    		"name" : "Language",
+    		"description" : "Humans begin play speaking Common. Humans with high Intelligence scores can choose any languages they want (except secret languages, such as Druidic).",
+    		"boost" : []
+    	}
+    ],
+    "image": "http://www.d20pfsrd.com/_/rsrc/1474175136515/images/dagger.png?height=600&width=450"    
+}

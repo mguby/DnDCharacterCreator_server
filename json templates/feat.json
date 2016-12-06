@@ -1,0 +1,14 @@
+{
+	"name" : "acrobatic",
+	"description" : "You are skilled at leaping, jumping, and flying.",
+	"bonus" : [
+		{
+			"name" : "acrobatics",
+			"modifier": 2
+		},
+		{
+			"name" : "fly",
+			"modifier" : 2
+		}
+	]
+}
