@@ -6,7 +6,7 @@ var Feat = require('./feat').schema;
 
 var CharacterSchema   = new mongoose.Schema({
     name: String,
-    level: { type: Number, default: 0 },
+    level: { type: Number, default: 1 },
     pictureURL: String,
     class: Class,
     race: Race,
@@ -18,8 +18,8 @@ var CharacterSchema   = new mongoose.Schema({
         wis: { type: Number, default: 0 },
         cha: { type: Number, default: 0 }
     },
-    feats: [Feat],
-    inventory: [String],
+    feats: {type: [Feat], default: []},
+    inventory: {type: [String], default: []},
     skills: {
         appraise: { type: Number, default: 0 },
         balance: { type: Number, default: 0 },
