@@ -1,0 +1,144 @@
+{
+    "name": "ravid",
+    "level": 1,
+    "pictureURL": "www.google.com",
+    "class": {
+        "_id": {
+            "$oid": "58425220f36d282dbc872dd7"
+        },
+        "name": "Wizard",
+        "description": "While universalist wizards might study to prepare themselves for any manner of danger, specialist wizards research schools of magic that make them exceptionally skilled within a specific focus. Yet no matter their specialty, all wizards are masters of the impossible and can aid their allies in overcoming any danger.",
+        "classSkills": [
+            "Appraise",
+            "Craft",
+            "Fly",
+            "Knowledge (all)",
+            "Linguistics",
+            "Profession",
+            "Spellcraft"
+        ],
+        "image": "http://www.d20pfsrd.com/_/rsrc/1474175139540/images/wizard-320.png"
+    }, 
+    "race": {
+        "_id": {
+            "$oid": "584251f4f36d282dbc872dd6"
+        },
+        "name": "Elf",
+        "description": "The long-lived elves are children of the natural world, similar in many superficial ways to fey creatures, though with key differences. While fey are truly linked to the flora and fauna of their homes, existing as the nearly immortal voices and guardians of the wilderness, elves are instead mortals who are in tune with the natural world around them. Elves seek to live in balance with the wild and understand it better than most other mortals. Some of this understanding is mystical, but an equal part comes from the elves' long lifespans, which in turn gives them long-ranging outlooks. Elves can expect to remain active in the same locale for centuries. By necessity, they must learn to maintain sustainable lifestyles, and this is most easily done when they work with nature, rather than attempting to bend it to their will. However, their links to nature are not entirely driven by pragmatism. Elves' bodies slowly change over time, taking on a physical representation of their mental and spiritual states, and those who dwell in a region for a long period of time find themselves physically adapting to match their surroundings, most noticeably taking on coloration that reflects the local environment. Elves value their privacy and traditions, and while they are often slow to make friends at both the personal and national levels, once an outsider is accepted as a comrade, the resulting alliances can last for generations. Elves take great joy in forging alliances with races that share or exceed their long lifetimes, and often work to befriend dragons, outsiders, and fey. Those elves who spend their lives among the short-lived races, on the other hand, often develop a skewed perception of mortality and become morose, the result of watching wave after wave of companions age and die before their eyes.",
+        "traits": [
+            {
+                "name": "Ability Score Racial Traits",
+                "description": "Elves are nimble, both in body and mind, but their form is frail",
+                "boost": [
+                    {
+                        "name": "Dexterity",
+                        "modifier": 2
+                    },
+                    {
+                        "name": "Intelligence",
+                        "modifier": 2
+                    },
+                    {
+                        "name": "Constitution",
+                        "modifier": -2
+                    }
+                ]
+            },
+            {
+                "name": "Size",
+                "description": "Elves are Medium creatures and thus receive no bonuses or penalties due to their size.",
+                "boost": []
+            },
+            {
+                "name": "Type",
+                "description": "Elves are Medium creatures and thus receive no bonuses or penalties due to their size.",
+                "boost": []
+            },
+            {
+                "name": "Base Speed",
+                "description": "Elves have a base speed of 30 feet.",
+                "boost": []
+            },
+            {
+                "name": "Language",
+                "description": " Elves begin play speaking Common and Elven. Elves with high Intelligence scores can choose from the following: Celestial, Draconic, Gnoll, Gnome, Goblin, Orc, and Sylvan.",
+                "boost": []
+            }
+        ],
+        "image": "http://weknowyourdreams.com/images/elf/elf-08.jpg"
+    },
+    "abilities": {
+        "str": 10,
+        "dex": 10,
+        "con": 10,
+        "int": 10,
+        "wis": 10,
+        "cha": 10
+    },
+    "feats": [{
+        "_id": {
+            "$oid": "58423929f36d282dbc872bf8"
+        },
+        "name": "acrobatic",
+        "description": "You are skilled at leaping, jumping, and flying.",
+        "benefit": "You get a +2 bonus on all Acrobatics and Fly skill checks. If you have 10 or more ranks in one of these skills, the bonus increases to +4 for that skill."
+    },
+    {
+        "_id": {
+            "$oid": "58425fe8734d1d2b0ced5101"
+        },
+        "name": "Dragonheart",
+        "description": "You are skilled at leaping, jumping, and flying.",
+        "benefit": "You gain a +1 bonus on all saving throws against auras, breath weapons, spell-like abilities, spells, supernatural abilities, and other special attacks of creatures with the dragon type."
+    }],
+    "inventory": ["your girl", "your girl x 2"],
+    "skills": {
+        "appraise": 0,
+        "balance": 0,
+        "bluff": 0,
+        "climb": 0,
+        "concentration": 0,
+        "craft": 0,
+        "decipherScript": 0,
+        "diplomacy": 0,
+        "disableDevice": 0,
+        "disguise": 0,
+        "escapeArtist": 0,
+        "forgery": 0,
+        "gatherInformation": 0,
+        "handleAnimal": 0,
+        "heal": 0,
+        "hide": 0,
+        "intimidate": 0,
+        "jump": 0,
+        "knowledgeAll": 0,
+        "knowledgeArchitecture": 0,
+        "knowledgeEngineering": 0,
+        "knowledgeDuoengineering": 0,
+        "knowledgeGeography": 0,
+        "knowledgeHistory": 0,
+        "knowledgeLocal": 0,
+        "knowledgeNature": 0,
+        "knowledgeNobility": 0,
+        "knowledgeRoyalty": 0,
+        "knowledgeReligion": 0,
+        "knowledgePlanes": 0,
+        "listen": 0,
+        "moveSilently": 0,
+        "openLock": 0,
+        "perform": 0,
+        "profession": 0,
+        "ride": 0,
+        "search": 0,
+        "senseMotive": 0,
+        "sleightOfHand": 0,
+        "speakLanguage": 0,
+        "spellcraft": 0,
+        "spot": 0,
+        "survival": 0,
+        "swim": 0,
+        "tumble": 0,
+        "useMagicDevice": 0,
+        "useRope": 0
+    }
+}
