@@ -7,7 +7,7 @@ module.exports = function(router) {
   logoutRoute.get(function(req, res) {
   	console.log("logged out");
   	req.logout();
-  	res.redirect('http://localhost:3000/#/login');
+  	res.redirect('http://fa16-cs498rk-011.cs.illinois.edu:4000/#/login');
   });
   return router;
 }
