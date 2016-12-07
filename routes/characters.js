@@ -13,11 +13,6 @@ module.exports = function(router) {
 
     characterRoute.post(function(req, res) {
         console.log(req.body.abilities);
-        //req.body.abilities = eval("(" + req.body.abilities + ")");
-        //req.body.class = eval("(" + req.body.class + ")");
-        //req.body.race = eval("(" + req.body.race + ")");
-        //req.body.skills = eval("(" + req.body.skills + ")");
-        //req.body.feats = eval("(" + req.body.feats + ")");
 
         var character = new Character({
             name: req.body.name,
@@ -35,56 +30,7 @@ module.exports = function(router) {
                 cha: req.body.abilities.cha
             },
             feats: req.body.feats,
-            inventory: req.body.inventory,
-            skills: {
-                appraise: req.body.skills.appraise,
-                balance: req.body.skills.balance,
-                bluff: req.body.skills.bluff,
-                climb: req.body.skills.climb,
-                concentration: req.body.skills.concentration,
-                craft: req.body.skills.craft,
-                decipherScript: req.body.skills.decipherScript,
-                diplomacy: req.body.skills.diplomacy,
-                disableDevice: req.body.skills.disableDevice,
-                disguise: req.body.skills.disguise,
-                escapeArtist: req.body.skills.escapeArtist,
-                forgery: req.body.skills.forgery,
-                gatherInformation: req.body.skills.gatherInformation,
-                handleAnimal: req.body.skills.handleAnimal,
-                heal: req.body.skills.heal,
-                hide: req.body.skills.hide,
-                intimidate: req.body.skills.intimidate,
-                jump: req.body.skills.jump,
-                knowledgeAll: req.body.skills.knowledgeAll,
-                knowledgeArchitecture: req.body.skills.knowledgeArchitecture,
-                knowledgeEngineering: req.body.skills.knowledgeEngineering,
-                knowledgeDuoengineering: req.body.skills.knowledgeDuoengineering,
-                knowledgeGeography: req.body.skills.knowledgeGeography,
-                knowledgeHistory: req.body.skills.knowledgeHistory,
-                knowledgeLocal: req.body.skills.knowledgeLocal,
-                knowledgeNature: req.body.skills.knowledgeNature,
-                knowledgeNobility: req.body.skills.knowledgeNobility,
-                knowledgeRoyalty: req.body.skills.knowledgeRoyalty,
-                knowledgeReligion: req.body.skills.knowledgeReligion,
-                knowledgePlanes: req.body.skills.knowledgePlanes,
-                listen: req.body.skills.listen,
-                moveSilently: req.body.skills.moveSilently,
-                openLock: req.body.skills.openLock,
-                perform: req.body.skills.perform,
-                profession: req.body.skills.profession,
-                ride: req.body.skills.ride,
-                search: req.body.skills.search,
-                senseMotive: req.body.skills.senseMotive,
-                sleightOfHand: req.body.skills.sleightOfHand,
-                speakLanguage: req.body.skills.speakLanguage,
-                spellcraft: req.body.skills.spellcraft,
-                spot: req.body.skills.spot,
-                survival: req.body.skills.survival,
-                swim: req.body.skills.swim,
-                tumble: req.body.skills.tumble,
-                useMagicDevice: req.body.skills.useMagicDevice,
-                useRope: req.body.skills.useRope
-            }
+            inventory: req.body.inventory
         });
         console.log(JSON.stringify(character));
         character.save().then(function(character) {
