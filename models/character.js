@@ -6,6 +6,7 @@ var Feat = require('./feat').schema;
 
 var CharacterSchema   = new mongoose.Schema({
     name: String,
+    user: String,
     level: { type: Number, default: 1 },
     pictureURL: String,
     class: Class,

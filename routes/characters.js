@@ -14,6 +14,7 @@ module.exports = function(router) {
     characterRoute.post(function(req, res) {
         var character = new Character({
             name: req.body.name,
+            user: req.body.user,
             level: req.body.level,
             pictureURL: req.body.pictureURL,
             class: req.body.class,
