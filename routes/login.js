@@ -36,7 +36,7 @@ passport.deserializeUser(function(id, done) {
   
   loginRoute.post(passport.authenticate('local', {failureRedirect:'http://fa16-cs498rk-011.cs.illinois.edu:4000/#/login'}),
   function(req, res) {
-    res.redirect('http://fa16-cs498rk-011.cs.illinois.edu:4000/#/dashboard' + req.user.username);
+    res.redirect('http://fa16-cs498rk-011.cs.illinois.edu:4000/#/dashboard/' + req.user.username);
   });
   return router;
 }
