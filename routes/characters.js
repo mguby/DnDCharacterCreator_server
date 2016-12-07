@@ -12,6 +12,13 @@ module.exports = function(router) {
     });
 
     characterRoute.post(function(req, res) {
+        console.log(req.body.abilities);
+        //req.body.abilities = eval("(" + req.body.abilities + ")");
+        //req.body.class = eval("(" + req.body.class + ")");
+        //req.body.race = eval("(" + req.body.race + ")");
+        //req.body.skills = eval("(" + req.body.skills + ")");
+        //req.body.feats = eval("(" + req.body.feats + ")");
+
         var character = new Character({
             name: req.body.name,
             user: req.body.user,
@@ -79,6 +86,7 @@ module.exports = function(router) {
                 useRope: req.body.skills.useRope
             }
         });
+        console.log(JSON.stringify(character));
         character.save().then(function(character) {
             res.status(201).json(helpers.createResponse("OK", character));
         })
