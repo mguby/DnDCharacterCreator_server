@@ -22,7 +22,7 @@ module.exports = function(router) {
 
 		var promise = newUser.save();
 		promise.then(function (result) {
-			res.redirect('http://fa16-cs498rk-011.cs.illinois.edu:4000/#/login");
+			res.redirect('http://fa16-cs498rk-011.cs.illinois.edu:4000/#/login');
 		})
 		.catch(function(err){
 			res.status(500).json({ message: 'ERROR', data: [] });
