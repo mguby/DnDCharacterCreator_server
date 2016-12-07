@@ -3,5 +3,5 @@
  */
 module.exports = {
     token : "secret-llama",
-    mongo_connection : "mongodb://gubatan2:hunter2@ds119748.mlab.com:19748/dnd-creator"
+    mongo_connection : "mongodb://fuckingwhat:what@ds119748.mlab.com:19748/dnd-creator"
 };
